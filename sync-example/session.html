@@ -69,9 +69,9 @@
         <title>Page Title</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            .detail-content {
+            /* .detail-content {
                 display: none;
-            }
+            } */
         </style>
         <!--  <script type="text/javascript">
       $(document).ready(function () {
@@ -105,7 +105,7 @@
 
         //console.log("sessioonnnnnn", speaker_data.length)
         // console.log("sessioonnnnnn", session)
-        document.write("<h1 class=agenda>AGENDA</h1>")
+        // document.write("<h1 class=agenda>AGENDA</h1>")
 
         // document.write("<div class=container>")
         // for(i=0; i < session_data.length; i++) {
@@ -181,7 +181,8 @@
         //          }
         // document.write("</ul>") 
         document.write("<div class=container-fluid id=backcol>")
-        document.write("<div class=container id=main>")
+        document.write("<div class='container' id=main>")
+        document.write("<h1 class=agenda>AGENDA</h1>")
         document.write("<div class=day>")
         for (i = 0; i < session_data.length; i++) {
             document.write("<div class=row >")
@@ -204,7 +205,7 @@
                             document.write("<div class=author-img>")
                             document.write("<img src=./assets/img1.png>")
                             document.write("</div>")
-                            document.write("<h3 class=activity-name>" + speaker_data[k].full_name + "</h3>")
+                            document.write("<h3 class='activity-name author-name'>" + speaker_data[k].full_name + "</h3>")
                             document.write("</div>")
                             // end
                             document.write("<div class=detail-content>")

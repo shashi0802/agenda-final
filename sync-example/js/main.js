@@ -1,11 +1,10 @@
 $(document).ready(function () {
-    $(".activity-name").click(function () {
+    $(".author-name").click(function () {
         $('.detail').empty();
-        var $popdata = $('.detail-content').clone();
-        $('.detail').html($popdata[0]);
+        var $popdata = $(this).parents('.row').next('.detail-content').clone();
+        $('.detail').html($popdata);
         $(".detail").fadeIn();
         $("body").css({"overflow":"hidden"});
-        console.log($popdata);
     });
 
     $(document).on('click', '.close', function () {
